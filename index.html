@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="js/p5.min.js"></script>
+    <script type="text/javascript" src="js/p5.dom.js"></script>
+    <script type="text/javascript" src="js/Tile.js"></script>
+    <script type="text/javascript" src="js/Map.js"></script>
+    <script type="text/javascript" src="js/sketch.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>MapCreator</h1>
+    </header>
+    <div id="editor">
+        <div class="alert-info">
+            <p>Enter an X and Y value to change a tile</p>
+        </div>
+        <div class="in-group">
+            <label for="xCoord">X:</label>
+            <input type="text" id="xCoord" name="xCoord">
+            <label for="yCoord">Y:</label>
+            <input type="text" id="yCoord" name="yCoord">
+        </div>
+        <div class="btn-group">
+            <button id="land"><img src="img/land.png" alt="LAND"></button>
+            <button id="sea"><img src="img/sea.png" alt="SEA"></button>
+            <button id="mtn"><img src="img/mtn.png" alt="MTN"></button>
+            <button id="tree"><img src="img/forest.png" alt="TREE"></button>
+            <button id="city"><img src="img/city.png" alt="CITY"></button>
+        </div>
+    </div>
+    <div id="canvas">
+    </div>
+</body>
+
+</html>
